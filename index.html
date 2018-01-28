@@ -85,24 +85,34 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="설치"><a href="#설치" class="headerlink" title="설치"></a>설치</h1><h2 id="준비"><a href="#준비" class="headerlink" title="준비"></a>준비</h2><ul>
+        <p># </p>
+<h2 id="준비"><a href="#준비" class="headerlink" title="준비"></a>준비</h2><ul>
 <li>Node.js</li>
 <li>Git</li>
-<li><p>hexo install</p>
-<figure class="highlight plain"><figcaption><span>npm install -g hexo-cli```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">## Hexo 설치후</span><br></pre></td></tr></table></figure>
-</li>
 </ul>
-<p>$ hexo init <folder><br>$ cd <folder><br>$ npm install<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### _config.yml 수정</span><br></pre></td></tr></table></figure></folder></folder></p>
-<h1 id="url-수정"><a href="#url-수정" class="headerlink" title="url 수정"></a>url 수정</h1><p>url: <a href="http://simmh.gihub.io">http://simmh.gihub.io</a><br>root: /<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## init</span><br><span class="line">```$ hexo init [folder]</span><br></pre></td></tr></table></figure></p>
-<h2 id="new"><a href="#new" class="headerlink" title="new"></a>new</h2><figure class="highlight plain"><figcaption><span>hexo new [layout] <title>```</title></span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## server</span><br><span class="line">```$ hexo server</span><br></pre></td></tr></table></figure>
-<h2 id="generrate"><a href="#generrate" class="headerlink" title="generrate"></a>generrate</h2><figure class="highlight plain"><figcaption><span>hexo generate [-d|-w]```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">## publish 작성 내용 배포</span><br><span class="line">``` $ hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
-<p>##deploy<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Deploy 하기 전에 generate를 수행합니다.</span><br><span class="line">$ hexo deploy [-g]</span><br></pre></td></tr></table></figure></p>
-<h1 id="render"><a href="#render" class="headerlink" title="render ?"></a>render ?</h1><p><code>$ hexo render &lt;file1&gt; [file2] ...</code></p>
-
+<h2 id="Hexo-설치"><a href="#Hexo-설치" class="headerlink" title="Hexo 설치"></a>Hexo 설치</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 헥소 커맨드 라인 인터페이스 설치</span><br><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<h2 id="Hexo-설치후-블로그-생성"><a href="#Hexo-설치후-블로그-생성" class="headerlink" title="Hexo 설치후 블로그 생성"></a>Hexo 설치후 블로그 생성</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt; #</span><br><span class="line">$ cd &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+<h1 id="설정"><a href="#설정" class="headerlink" title="설정"></a>설정</h1><h3 id="config-yml-수정"><a href="#config-yml-수정" class="headerlink" title="_config.yml 수정"></a>_config.yml 수정</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># url 수정</span><br><span class="line">url: http://simmh.gihub.io</span><br><span class="line">root: /</span><br></pre></td></tr></table></figure>
+<h1 id="글-생성"><a href="#글-생성" class="headerlink" title="글 생성"></a>글 생성</h1><h2 id="new"><a href="#new" class="headerlink" title="new"></a>new</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="server"><a href="#server" class="headerlink" title="server"></a>server</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h2 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate [-d|-w]</span><br></pre></td></tr></table></figure>
+<h1 id="배포"><a href="#배포" class="headerlink" title="배포"></a>배포</h1><h2 id="배포-준비"><a href="#배포-준비" class="headerlink" title="배포 준비"></a>배포 준비</h2><ol>
+<li>Github에 계정명.github.io repository 생성</li>
+<li><p>Git 배포 패키지 설치</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i --save hexo-deployer-gi</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>./_config.yml의 deploy를 설정</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: &lt;repository url&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Deploy 하기 전에 generate를 수행합니다.</span><br><span class="line">$ hexo deploy [-g]</span><br></pre></td></tr></table></figure>
+<h1 id="그외"><a href="#그외" class="headerlink" title="그외"></a>그외</h1><h2 id="publish-작성-내용-배포"><a href="#publish-작성-내용-배포" class="headerlink" title="publish 작성 내용 배포"></a>publish 작성 내용 배포</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="render"><a href="#render" class="headerlink" title="render ?"></a>render ?</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo render &lt;file1&gt; [file2] ...</span><br></pre></td></tr></table></figure>
+<h2 id="배포가-잘-안될-경우"><a href="#배포가-잘-안될-경우" class="headerlink" title="배포가 잘 안될 경우"></a>배포가 잘 안될 경우</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo deploy --generate</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://simmh.gihub.io/2018/01/28/hexo-사용법-메모/" data-id="cjcyh28350002p4s79bjze33a" class="article-share-link">공유</a>
+      <a data-url="http://simmh.gihub.io/2018/01/28/hexo-사용법-메모/" data-id="cjcyhs8ll00035ws7xhizwacy" class="article-share-link">공유</a>
       
       
     </footer>
@@ -138,7 +148,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://simmh.gihub.io/2018/01/28/test-posting/" data-id="cjcyh28360003p4s7reycklmr" class="article-share-link">공유</a>
+      <a data-url="http://simmh.gihub.io/2018/01/28/test-posting/" data-id="cjcyhs8lh00015ws70e9yvjyw" class="article-share-link">공유</a>
       
       
     </footer>
@@ -174,7 +184,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://simmh.gihub.io/2018/01/28/세번째-한글-포스팅/" data-id="cjcyh28380005p4s7xx01mjzm" class="article-share-link">공유</a>
+      <a data-url="http://simmh.gihub.io/2018/01/28/세번째-한글-포스팅/" data-id="cjcyhs8lm00045ws71hl17r5g" class="article-share-link">공유</a>
       
       
     </footer>
@@ -211,7 +221,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://simmh.gihub.io/2018/01/28/두번째-한글-포스팅/" data-id="cjcyh28370004p4s7fbqo07q2" class="article-share-link">공유</a>
+      <a data-url="http://simmh.gihub.io/2018/01/28/두번째-한글-포스팅/" data-id="cjcyhs8ln00055ws7068chveu" class="article-share-link">공유</a>
       
       
     </footer>
@@ -248,7 +258,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://simmh.gihub.io/2018/01/28/포스팅/" data-id="cjcyh283a0006p4s7bwbdv17i" class="article-share-link">공유</a>
+      <a data-url="http://simmh.gihub.io/2018/01/28/포스팅/" data-id="cjcyhs8lo00065ws7d8tz6q45" class="article-share-link">공유</a>
       
       
     </footer>
@@ -284,7 +294,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://simmh.gihub.io/2018/01/28/My-New-Post/" data-id="cjcyh282x0000p4s7qunbxzdp" class="article-share-link">공유</a>
+      <a data-url="http://simmh.gihub.io/2018/01/28/My-New-Post/" data-id="cjcyhs8lc00005ws7d66redsw" class="article-share-link">공유</a>
       
       
     </footer>
@@ -329,7 +339,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://simmh.gihub.io/2018/01/28/hello-world/" data-id="cjcyh28320001p4s7gpe4wr2w" class="article-share-link">공유</a>
+      <a data-url="http://simmh.gihub.io/2018/01/28/hello-world/" data-id="cjcyhs8lj00025ws77etpvixg" class="article-share-link">공유</a>
       
       
     </footer>
